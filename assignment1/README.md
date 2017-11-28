@@ -18,6 +18,7 @@ the score for ![](http://chart.googleapis.com/chart?cht=tx&chl=j) class of ![](h
 is
 
 The Loos Function is:
-![](http://bit.ly/2nfzeZB)
+
+![](http://www.sciweavers.org/tex2img.php?eq=L_i%3D%5Csum_%7Bj%20%5Cneq%20y_i%7Dmax%280%2Cs_j-s_%7By_i%7D%2B%5CDelta%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 ff
