@@ -18,5 +18,6 @@ the score for ![](http://chart.googleapis.com/chart?cht=tx&chl=j) class of ![](h
 is
 
 The Loos Function is:
-![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+![](http://bit.ly/2nfzeZB)
+
 ff
