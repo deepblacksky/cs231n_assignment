@@ -31,7 +31,7 @@ where ![]() is the margin(=1). The total loss:
 ![](http://www.sciweavers.org/tex2img.php?eq=L%20%3D%20%5Cfrac%7B1%7D%7BN%7D%5Csum_%7Bi%7DL_i%20%2B%20%5Clambda%20%5Csum_%7Bk%7D%5Csum_%7Bl%7DW_%7Bk%2Cl%7D%5E%7B2%7D&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0)
 
 Next, we need to compute Gradient to optimize the parameter.
-The Gradient formula is 
+The Gradient formula is
 
 ![](http://www.sciweavers.org/tex2img.php?eq=%5Cleft%5C%7B%5Cbegin%7Baligned%7D%0A%5Cnabla_%7Bw_%7By_i%7D%7D%20L_i%20%3D%20%26%20-%5Cleft%28%5Csum_%7Bj%20%5Cne%20y_i%7D1%28w_j%5ETx_i%20-%20w_%7By_i%7D%5ETx_i%20%2B%20%5CDelta%20%3E%200%29%5Cright%29x_i%20%26%20j%20%3D%20y_i%20%5C%5C%0A%5Cnabla_%7Bw_j%7D%20L_i%20%3D%20%26%201%28w_j%5ETx_i%20-%20w_%7By_i%7D%5ETx_i%20%2B%20%5CDelta%20%3E%200%29%20x_i%20%26%20j%20%5Cne%20y_i%0A%5Cend%7Baligned%7D%5Cright.&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0)
 
@@ -42,9 +42,9 @@ Implement and apply a Softmax classifier
 
 It is samilier with SVM, the only one difference is loss function. Detials can read [linear classification notes](https://cs231n.github.io/linear-classify/). The is softmax loss (cross-entropy Loss) function:
 
-![](http://www.sciweavers.org/tex2img.php?eq=L_i%20%3D%20-%20%5Clog%20%5Cleft%28%20%5Cfrac%7Be%5E%7Bf_%7By_i%7D%7D%7D%7B%5Csum_j%20e%5E%7Bf_j%7D%7D%20%20%5Cright%29%5Cquad%20%5Ctext%7Bor%20equivalently%7D%5Cquad%20L_i%20%3D%20-f_%7By_i%7D%20%2B%20%5Clog%5Csum_j%20e%5E%7Bf_j%7D&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=L_i%20%3D%20-%20%5Clog%20%5Cleft%28%20%5Cfrac%7Be%5E%7Bf_%7By_i%7D%7D%7D%7B%5Csum_j%20e%5E%7Bf_j%7D%7D%20%20%5Cright%29%20%5Ctext%7Bor%20equivalently%7D%5Cquad%20L_i%20%3D%20-f_%7By_i%7D%20%2B%20%5Clog%5Csum_j%20e%5E%7Bf_j%7D&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0)
 
-where ![](http://www.sciweavers.org/tex2img.php?eq=f&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0) is the score like SVM.
+where f is the score like SVM.
 And Gradient is:
 
 ![](http://www.sciweavers.org/tex2img.php?eq=%5Cleft%5C%7B%5Cbegin%7Baligned%7D%0A%5Cnabla_%7Bw_%7By_i%7D%7D%20L_i%20%3D%20%26%20%28-1%20%2B%20%5Cfrac%7Be%5E%7Bf_%7By_i%7D%7D%7D%7B%5Csum_j%20e%5E%7Bf_j%7D%7D%20%29x_i%20%26%20j%20%3D%20y_i%20%5C%5C%0A%5Cnabla_%7Bw_j%7D%20L_i%20%3D%20%26%20%5Cfrac%7Be%5E%7Bf_j%7D%7D%7B%5Csum_j%20e%5E%7Bf_j%7D%7D%20x_i%20%26%20j%20%5Cne%20y_i%0A%5Cend%7Baligned%7D%5Cright.&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0)
@@ -72,4 +72,3 @@ complete [two_layer_net.ipynb](https://github.com/deepblacksky/cs231n_assignment
 Get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
 
 complete [features.ipynb](https://github.com/deepblacksky/cs231n_assignment/blob/master/assignment1/features.ipynb)
-
