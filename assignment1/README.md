@@ -15,7 +15,8 @@ such as "broadcast sum".
 SVM is a linear classifier. It is based on scoring results to classify.
 Input sample ![](http://chart.googleapis.com/chart?cht=tx&chl=x_i),
 the score for ![](http://chart.googleapis.com/chart?cht=tx&chl=j) class of ![](http://chart.googleapis.com/chart?cht=tx&chl=x_i)
-is 
+is
+<a href="https://www.codecogs.com/eqnedit.php?latex=s_j=f(x_i;&space;W,&space;b)_j=(Wx_i&space;&plus;&space;b)_j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s_j=f(x_i;&space;W,&space;b)_j=(Wx_i&space;&plus;&space;b)_j" title="s_j=f(x_i; W, b)_j=(Wx_i + b)_j" /></a>
 
-![](http://chart.googleapis.com/chart?cht=tx&chl=s_j=f(x_i;,W,b)_j=(Wx_i+b)_j)
- 
+The Loos Function is:
+<img src="https://latex.codecogs.com/gif.latex?L_i=\sum_{j\neq&space;y_i}&space;max(0,s_j-s_{y_i}&plus;\Delta)" title="L_i=\sum_{j\neq y_i} max(0,s_j-s_{y_i}+\Delta)" />
